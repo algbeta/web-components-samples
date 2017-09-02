@@ -1,0 +1,31 @@
+{
+  "name": "web-components-samples",
+  "version": "1.0.0",
+  "description": "samples done to test webcomponents approach",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/http-server/bin/http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algbeta/web-components-samples.git"
+  },
+  "keywords": [
+    "webcomponent",
+    "template",
+    "htmlimport",
+    "custome",
+    "element",
+    "web",
+    "components"
+  ],
+  "author": "Natallia Gorbunova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/algbeta/web-components-samples/issues"
+  },
+  "homepage": "https://github.com/algbeta/web-components-samples#readme",
+  "devDependencies": {
+    "http-server": "0.10.0"
+  }
+}
