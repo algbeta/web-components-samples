@@ -4,9 +4,15 @@
     // Define the class for a new element called custom-element
     class CustomElement extends Polymer.Element {
         static get is() { return "custom-element"; }
+        static get template() {
+            return `<div>
+                <p>I'm a custom-element.</p>
+                <span>additional span element in custom component</span>
+                <img src=\"http://www.daycomsolutions.com/Support/BatchImage/HPIM0050w800.JPG\" />
+                </div>`
+        }
         constructor() {
             super();
-            this.textContent = "I'm a custom-element.";
         }
     }
     // Register the new element with the browser
