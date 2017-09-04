@@ -1,4 +1,4 @@
-##Web-components-samples
+# Web-components-samples
 
 This repo contains examples of web component techniques.
 
@@ -6,7 +6,7 @@ This repo contains examples of web component techniques.
 - Html import example contains a page which has an html import link. Html to be import has quite complex structure including external resources
 
 
-#Polymer concerns
+## Polymer concerns
 - it is complex
 - polymer components are described in html files
 - it has it's own eco-system, even building of custom components is done through polymer bundle
