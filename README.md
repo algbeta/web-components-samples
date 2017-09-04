@@ -17,6 +17,7 @@ This repo contains examples of web component techniques.
 - compared to native Web Components (which are fully supported by chrome only) Polymer does slow the perfomance.
 - *browser support is a plus*
 - does not depend on order of scripts to be included. We can do a markup of a component, and only after that include polymer and it works fine
+![alt text](./screenshot/Screenshot-polymer.png "custom element with polymer loading sample")
 
 ## React component
 - can be embbeded easily into any compatible react app
@@ -25,6 +26,6 @@ This repo contains examples of web component techniques.
 
 ## Custom html element with polyfill
 - small compared to *Polymer*, browser support is a plus
-- doesn't contain unnesessary feature compared to *Polymer*
-![alt text](./screenshot/Screenshot-polyfill.png "custom element loading sample")
+- doesn't contain unnecessary feature compared to *Polymer*
+![alt text](./screenshot/Screenshot-polyfill.png "custom element with polyfill loading sample")
 
