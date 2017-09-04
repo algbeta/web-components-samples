@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -9,9 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="import" href="custom-element.html">
-    <title>Custom element with Polymer Example</title>
-    <title>html import example</title>
+    <title>Custom element with Polyfill Example</title>
 </head>
 
 <body>
@@ -59,7 +57,27 @@
         </div>
 
         <custom-element></custom-element>
-        <script src="https://polygit.org/components/webcomponentsjs/webcomponents-loader.js"></script>
+        <script>
+            class CustomElement extends HTMLElement {
+                constructor() {
+                    super();
+                }
+                connectedCallback() {
+                    this.innerHTML = `<div>
+                        <p>I'm a custom-element.</p>
+                        <span>additional span element in custom component</span>
+                        <img src=\"http://www.daycomsolutions.com/Support/BatchImage/HPIM0050w800.JPG\" />
+                        </div>`;
+                }
+            }
+
+            // define it in the CustomElementRegistry
+            customElements.define('custom-element', CustomElement);
+        </script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/document-register-element/1.5.0/document-register-element.js">
+            /* W3C Custom Elements */
+        </script>
+
         <footer class="footer">
             <p>© 2016 Company, Inc.</p>
         </footer>
@@ -68,5 +86,3 @@
     <!-- /container -->
 
 </body>
-
-</html>

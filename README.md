@@ -21,4 +21,9 @@ This repo contains examples of web component techniques.
 ## React component
 - can be embbeded easily into any compatible react app
 - easy to serve/ to include into app
-- no additional perfomance issues
+- no additional perfomance issues (we'll face only ones related to React and our own code)
+
+## Custom html element with polyfill
+- small compared to *Polymer*, browser support is a plus
+- doesn't contain unnesessary feature compared to *Polymer*
+
