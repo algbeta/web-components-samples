@@ -62,17 +62,15 @@
 
         <div class="row" id="placeToPutImport"></div>
         <script>
-            setTimeout(function () {
-                if ('import' in document.createElement('link')) {
-                    console.log("activate import");
-                    const link = document.querySelector('link[rel="import"]');
-                    const divElement = document.querySelector('#placeToPutImport');
-                    const elementToAdd = document.importNode(link.import.querySelector('.warning'), true);
-                    divElement.appendChild(elementToAdd);
-                } else {
-                    alert('html imports are not supported!')
-                }
-            }, 5000);
+            if ('import' in document.createElement('link')) {
+                console.log("activate import");
+                const link = document.querySelector('link[rel="import"]');
+                const divElement = document.querySelector('#placeToPutImport');
+                const elementToAdd = document.importNode(link.import.querySelector('.warning'), true);
+                divElement.appendChild(elementToAdd);
+            } else {
+                alert('html imports are not supported!')
+            }
         </script>
         <footer class="footer">
             <p>© 2016 Company, Inc.</p>

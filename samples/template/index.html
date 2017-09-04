@@ -65,18 +65,16 @@
 
         <div class="row" id="placeToPutTemplate"></div>
         <script>
-            setTimeout(function () {
-                if ('content' in document.createElement('template')) {
+            if ('content' in document.createElement('template')) {
 
-                    const templateElement = document.querySelector('template');
-                    const divElement = document.querySelector('#placeToPutTemplate');
-                    const clone = document.importNode(templateElement.content, true);
-                    divElement.appendChild(clone);
+                const templateElement = document.querySelector('template');
+                const divElement = document.querySelector('#placeToPutTemplate');
+                const clone = document.importNode(templateElement.content, true);
+                divElement.appendChild(clone);
 
-                } else {
-                    alert('templates are not supported!')
-                }
-            }, 5000);
+            } else {
+                alert('templates are not supported!')
+            }
         </script>
         <footer class="footer">
             <p>© 2016 Company, Inc.</p>

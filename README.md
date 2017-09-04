@@ -26,4 +26,5 @@ This repo contains examples of web component techniques.
 ## Custom html element with polyfill
 - small compared to *Polymer*, browser support is a plus
 - doesn't contain unnesessary feature compared to *Polymer*
+![alt text](./screenshot/Screenshot-polyfill.png "custom element loading sample")
 
